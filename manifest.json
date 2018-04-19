@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Conway's Game of Commits",
+  "version": "1.0",
+  "description": "Turns commit graphs into Conway's Game of Life",
+  "icons": {
+    "48": "logo.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://github.com/*"],
+      "js": ["index.js"]
+    }
+  ]
+}
